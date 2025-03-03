@@ -9,6 +9,7 @@ import WordFall from './projects/wordfall/WordFall'
 import TicTacToe from './projects/tictactoe/TicTacToe';
 import Asset from './projects/asset/Asset'
 import Library from './projects/library/Library'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                 <Route path='/asset' element={<Asset />} />
                 <Route path='/library' element={<Library />} />
             </Routes>
+            <Analytics />
         </Router>
     );
 }

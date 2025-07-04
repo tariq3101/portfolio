@@ -27,7 +27,7 @@ const Home = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-    
+
         emailjs.sendForm(
             'service_rtg22sc',
             'template_osemfds',
@@ -40,8 +40,8 @@ const Home = () => {
             console.log(error.text);
             toast.error('Failed to send message. Please try again later.')
         });
-    
-        e.target.reset(); 
+
+        e.target.reset();
     };
 
     return (
@@ -52,10 +52,11 @@ const Home = () => {
                     <div className="about-content">
                         <h2>I am Tariq Khan, A Software Engineer</h2>
                         <p>
-                            I am a third-year IT student with a strong foundation in full-stack development and software development.
-                            I have hands-on experience building applications and am continuously expanding my skills
-                            by studying emerging technologies. My passion for development drives me to create innovative solutions,
-                            and I am always eager to learn and grow in the ever-evolving tech landscape.
+                            I’m a final-year IT student with good knowledge of full-stack and software development. 
+                            I’ve worked on several projects where I got hands-on experience in building real applications. 
+                            I’m always exploring new technologies and try to improve my skills by learning something new 
+                            every day. I enjoy solving problems and building useful things, and I’m excited to keep 
+                            growing in this fast-changing tech world.
                         </p>
                     </div>
                     <div className="about-image">

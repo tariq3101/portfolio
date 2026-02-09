@@ -45,6 +45,7 @@ function ImageCarousel({ images }) {
 }
 
 const TicTacToe = () => {
+    window.scrollTo(0, 0);
     const projectImages = [
         tictactoe1, tictactoe2
     ];

@@ -45,6 +45,7 @@ function ImageCarousel({ images }) {
 }
 
 const WordFall = () => {
+    window.scrollTo(0, 0);
     const projectImages = [
         wordfall1, wordfall2
     ];

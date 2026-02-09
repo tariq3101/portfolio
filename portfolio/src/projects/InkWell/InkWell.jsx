@@ -53,6 +53,7 @@ function ImageCarousel({ images }) {
 }
 
 const InkWell = () => {
+    window.scrollTo(0, 0);
     const projectImages = [
         inkwell1, inkwell2, inkwell3, inkwell4, inkwell5, inkwell6
     ];

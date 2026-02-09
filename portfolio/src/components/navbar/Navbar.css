@@ -59,6 +59,15 @@ header {
     background-color: #fff;
     color: #000;
   }
+
+  .navbar a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .navbar a:hover {
+    text-decoration: none;
+  }  
   
   .hamburger {
     display: none;

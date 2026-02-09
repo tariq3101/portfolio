@@ -51,6 +51,7 @@ function ImageCarousel({ images }) {
 }
 
 const CVCraft = () => {
+    window.scrollTo(0, 0);
     const projectImages = [
         cvcraft1, cvcraft2, cvcraft3, cvcraft4, cvcraft5, cvcraft6
     ];

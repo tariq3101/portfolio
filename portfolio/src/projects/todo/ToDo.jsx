@@ -50,6 +50,7 @@ function ImageCarousel({ images }) {
 }
 
 const ToDo = () => {
+    window.scrollTo(0, 0);
     const projectImages = [
         todo1, todo2, todo3, todo4, todo5
     ];

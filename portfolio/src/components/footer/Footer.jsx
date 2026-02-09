@@ -17,7 +17,7 @@ const Footer = () => {
                         <li><a href='https://x.com/_khantariq_'><img src={twitter} alt='twitter'></img></a></li>
                     </ul>
                 </div>
-                <p>Tariq Khan &copy; 2025.</p>
+                <p>Tariq Khan &copy; 2026.</p>
             </div>
         </footer>
     )

@@ -9,6 +9,7 @@ import wordfall from "../../images/wordfall.png"
 import tictactoe from "../../images/tictac.png"
 import asset from "../../images/asset.png"
 import library from "../../images/library.png"
+import payment from "../../images/payment.png"
 import tariq from "../../images/tariq3.jpeg"
 import Footer from '../../components/footer/Footer';
 import emailjs from 'emailjs-com';
@@ -24,6 +25,7 @@ const Home = () => {
     const tictactoed = "A simple Tic Tac Toe web app built with React, allowing users to play the game directly in their browser. The app features a clean interface where players take turns marking X or O on a grid, with real-time game status updates."
     const assetd = " Asset management is crucial for maximizing productivity and minimizing costs. This Python-based Asset Management System provides a centralized solution with a Tkinter frontend and SQLite backend. It streamlines workflows, enabling users to track, maintain, and optimize assets effectively. With a user-friendly interface for easy navigation and a robust SQLite database for seamless data management, the system ensures enhanced operational efficiency, compliance, and risk mitigation across diverse sectors."
     const libraryd = "Library Management System (LMS) to automate library operations, including book transactions and member management. The system enhances user experience by integrating advanced features like recommendation engines and filters for efficient resource access."
+    const paymentd = "  A school payment management system with a backend (API) and a frontend (web interface). The project helps streamline fee management, student payments, and reporting by integrating modern web technologies. This project provides a full-stack application to manage school payment processes. It consists of: Backend (API): Handles authentication, payment processing, and data storage. Frontend (UI): A web-based dashboard for students, staff, and administrators to interact with the system."
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -52,11 +54,11 @@ const Home = () => {
                     <div className="about-content">
                         <h2>I am Tariq Khan, A Software Engineer</h2>
                         <p>
-                            I’m a final-year IT student with good knowledge of full-stack and software development. 
-                            I’ve worked on several projects where I got hands-on experience in building real applications. 
-                            I’m always exploring new technologies and try to improve my skills by learning something new 
-                            every day. I enjoy solving problems and building useful things, and I’m excited to keep 
-                            growing in this fast-changing tech world.
+                            I am an IT graduate with strong knowledge of full-stack and software development.
+                            During my academic journey, I worked on several projects that gave me hands-on experience in
+                            building real-world applications. I am passionate about exploring new technologies and continuously
+                            improving my skills by learning something new every day. I enjoy solving problems and creating useful
+                            solutions, and I’m excited to grow further in the ever-evolving tech industry.
                         </p>
                     </div>
                     <div className="about-image">
@@ -72,6 +74,24 @@ const Home = () => {
                 <div className="container">
                     <h2 className="section-title">Projects</h2>
                     <div className="project-grid">
+                    <div class="project-item">
+                            <Link to="/payment" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <div class="project-image-wrapper">
+                                    <img
+                                        src={payment}
+                                        alt="Project 1" />
+                                </div>
+                                <h3>Payment Gateway</h3>
+                                <p>
+                                    {paymentd}
+                                    {/* {inkwelld.split("", 150)}... */}
+                                </p>
+                            </Link>
+                            <div class="project-button">
+                                <a href="https://school-payment-frontend-lime.vercel.app/"><button type="button" class="project-btn">Demo</button></a>
+                                <a href="https://github.com/tariq3101/school-payment" ><button type="button" class="project-btn">Code</button></a>
+                            </div>
+                        </div>
                         <div class="project-item">
                             <Link to="/inkwell" style={{ textDecoration: 'none', color: 'inherit' }}>
                                 <div class="project-image-wrapper">

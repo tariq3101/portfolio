@@ -10,7 +10,7 @@ import tictactoe from "../../images/tictac.png"
 import asset from "../../images/asset.png"
 import library from "../../images/library.png"
 import payment from "../../images/payment.png"
-import tariq from "../../images/tariq3.jpeg"
+import tariq from "../../images/tariqSuit.png"
 import Footer from '../../components/footer/Footer';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';

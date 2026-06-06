@@ -34,7 +34,7 @@ const Home = () => {
             'service_rtg22sc',
             'template_osemfds',
             e.target,
-            'DLGvb8f7C6OpgoWK9'
+            '4P7Wo1-VfDnfVeSZd'
         ).then((result) => {
             console.log(result.text);
             toast.success('Email sent successfully');
@@ -74,7 +74,7 @@ const Home = () => {
                 <div className="container">
                     <h2 className="section-title">Projects</h2>
                     <div className="project-grid">
-                    <div class="project-item">
+                        <div class="project-item">
                             <Link to="/payment" style={{ textDecoration: 'none', color: 'inherit' }}>
                                 <div class="project-image-wrapper">
                                     <img
@@ -234,18 +234,44 @@ const Home = () => {
             <section id="contact">
                 <div className="container">
                     <h2>Contact Me</h2>
+
                     <form id="contact-form" onSubmit={sendEmail}>
+
                         <label htmlFor="name">Name</label>
-                        <input type="text" id="name" name="from_name" required />
+                        <input
+                            type="text"
+                            id="name"
+                            name="from_name"
+                            required
+                        />
 
                         <label htmlFor="email">Email</label>
-                        <input type="email" id="email" name="reply_to" required />
+                        <input
+                            type="email"
+                            id="email"
+                            name="reply_to"
+                            required
+                        />
+
+                        <label htmlFor="subject">Subject</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            required
+                        />
 
                         <label htmlFor="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            required
+                        ></textarea>
 
                         <button type="submit">Send</button>
                     </form>
+
                     <p id="form-message"></p>
                 </div>
             </section>

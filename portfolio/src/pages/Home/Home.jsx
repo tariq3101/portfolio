@@ -27,8 +27,11 @@ const Home = () => {
     const libraryd = "Library Management System (LMS) to automate library operations, including book transactions and member management. The system enhances user experience by integrating advanced features like recommendation engines and filters for efficient resource access."
     const paymentd = "  A school payment management system with a backend (API) and a frontend (web interface). The project helps streamline fee management, student payments, and reporting by integrating modern web technologies. This project provides a full-stack application to manage school payment processes. It consists of: Backend (API): Handles authentication, payment processing, and data storage. Frontend (UI): A web-based dashboard for students, staff, and administrators to interact with the system."
 
+    const [loading, setLoading] = useState(false);
+
     const sendEmail = (e) => {
         e.preventDefault();
+        setLoading(true);
 
         emailjs.sendForm(
             'service_rtg22sc',
@@ -41,6 +44,8 @@ const Home = () => {
         }).catch((error) => {
             console.log(error.text);
             toast.error('Failed to send message. Please try again later.')
+        }).finally(() => {
+            setLoading(false);
         });
 
         e.target.reset();
@@ -269,7 +274,20 @@ const Home = () => {
                             required
                         ></textarea>
 
-                        <button type="submit">Send</button>
+                        <button
+                            type="submit"
+                            className="send-btn"
+                            disabled={loading}
+                        >
+                            {loading ? (
+                                <>
+                                    <span className="spinner"></span>
+                                    Sending...
+                                </>
+                            ) : (
+                                "Send"
+                            )}
+                        </button>
                     </form>
 
                     <p id="form-message"></p>

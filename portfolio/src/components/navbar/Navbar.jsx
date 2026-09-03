@@ -25,7 +25,7 @@ const Navbar = () => {
                     <li><a href="/">Home</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact Me</a></li>
-                    <li><a href="https://drive.google.com/file/d/1ETOBTqDYdKD9EuBNUaZK_HnuYN1AJb4d/view?usp=sharing" target='_blank' rel="noreferrer">Resume</a></li>
+                    <li><a href="https://drive.google.com/file/d/1DegGm2FylUr3vC41ja60rQY_qFNO3bD8/view?usp=sharing" target='_blank' rel="noreferrer">Resume</a></li>
                     <li><a href="https://github.com/tariq3101" target='_blank' rel="noreferrer">GitHub</a></li>
                     <li><a href="https://www.linkedin.com/in/tariq-khan-30088931a/" target='_blank' rel="noreferrer">LinkedIn</a></li>
                 </ul>

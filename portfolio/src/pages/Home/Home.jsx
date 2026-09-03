@@ -14,6 +14,7 @@ import tariq from "../../images/tariqSuit.png"
 import Footer from '../../components/footer/Footer';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
+import { useState } from 'react';
 
 
 const Home = () => {
